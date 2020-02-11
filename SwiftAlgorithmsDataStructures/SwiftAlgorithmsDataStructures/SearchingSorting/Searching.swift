@@ -24,6 +24,12 @@ func linearSearch<T : Equatable>(_ collections: [T], _ target: T) -> Int? {
     return nil
 }
 
+
+/// Binary Search Algorithm
+/// Time Complexity: O(lg N)
+/// - Parameters:
+///   - collections: An array of any comparable
+///   - target: search target
 func binarySearch<T : Comparable>(_ collections: [T], _ target: T) -> Int? {
     var lower = 0, upper = collections.count
     
