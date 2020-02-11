@@ -8,10 +8,10 @@
 
 import Foundation
 
-func swap<T>(_ collection: inout [T], _ pos1: Int, _ pos2: Int) {
-    let tmp = collection[pos1]
-    collection[pos1] = collection[pos2]
-    collection[pos2] = tmp
+private func swap<T>(_ collection: inout [T], _ index1: Int, _ index2: Int) {
+    let tmp = collection[index1]
+    collection[index1] = collection[index2]
+    collection[index2] = tmp
 }
 
 func insertionSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bool) -> [T] {
@@ -30,7 +30,20 @@ func insertionSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bo
 }
 
 func selectionSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bool) -> [T] {
-    return []
+    var sortedCollection = collection
+    var checkVal: T, checkIdx: Int
+    for i in 0..<sortedCollection.count - 1 {
+        checkVal = sortedCollection[i]
+        checkIdx = i
+        for j in i + 1..<sortedCollection.count {
+            if comparator(sortedCollection[j], checkVal) {
+                checkVal = sortedCollection[j]
+                checkIdx = j
+            }
+        }
+        swap(&sortedCollection, i, checkIdx)
+    }
+    return sortedCollection
 }
 
 func bubbleSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bool) -> [T] {

@@ -18,14 +18,16 @@ func printSearchOutput(index: Int?, target: Int) {
     }
 }
 
-let collections = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let collection = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 let target1 = 10, target2 = 6
 
-printSearchOutput(index: binarySearch(collections, target1), target: target1)
-printSearchOutput(index: binarySearch(collections, target2), target: target2)
-printSearchOutput(index: linearSearch(collections, target1), target: target1)
-printSearchOutput(index: linearSearch(collections, target2), target: target2)
+printSearchOutput(index: binarySearch(collection, target1), target: target1)
+printSearchOutput(index: binarySearch(collection, target2), target: target2)
+printSearchOutput(index: linearSearch(collection, target1), target: target1)
+printSearchOutput(index: linearSearch(collection, target2), target: target2)
 
 let unsortedArray = [4, 3, 8, 0, -2, 4, 7, 5]
 print("Insertion Sort(ASC): \(insertionSort(unsortedArray, <))")
 print("Insertion Sort(DESC): \(insertionSort(unsortedArray, >))")
+print("Selection Sort(ASC): \(selectionSort(unsortedArray, <))")
+print("Selection Sort(DESC): \(selectionSort(unsortedArray, >))")
