@@ -42,30 +42,30 @@ print("Merge Sort(DESC): \(mergeSort(unsortedArray, >))")
 print("Quick Sort(ASC): \(quickSort(unsortedArray, <))")
 print("Quick Sort(DESC): \(quickSort(unsortedArray, >))")
 
-let lengthOfArray = 10_000
+let lengthOfArray = 10000
 let targetArray = (1...lengthOfArray).map { _ in Int.random(in: 1...(2 * lengthOfArray)) }
 
 var startTime = DispatchTime.now()
-var arr = insertionSort(targetArray, <)
+_ = insertionSort(targetArray, <)
 var endTime = DispatchTime.now()
 printTimeConsumption("Insertion Sort", start: startTime, end: endTime)
 
 startTime = DispatchTime.now()
-arr = selectionSort(targetArray, <)
+_ = selectionSort(targetArray, <)
 endTime = DispatchTime.now()
 printTimeConsumption("Selection Sort", start: startTime, end: endTime)
 
 startTime = DispatchTime.now()
-arr = bubbleSort(targetArray, <)
+_ = bubbleSort(targetArray, <)
 endTime = DispatchTime.now()
 printTimeConsumption("Bubble Sort", start: startTime, end: endTime)
 
 startTime = DispatchTime.now()
-arr = mergeSort(targetArray, <)
+_ = mergeSort(targetArray, <)
 endTime = DispatchTime.now()
 printTimeConsumption("Merge Sort", start: startTime, end: endTime)
 
 startTime = DispatchTime.now()
-arr = quickSort(targetArray, <)
+_ = quickSort(targetArray, <)
 endTime = DispatchTime.now()
 printTimeConsumption("Quick Sort", start: startTime, end: endTime)
