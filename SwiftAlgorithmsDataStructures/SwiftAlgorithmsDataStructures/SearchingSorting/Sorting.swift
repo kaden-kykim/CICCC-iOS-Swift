@@ -47,7 +47,15 @@ func selectionSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bo
 }
 
 func bubbleSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bool) -> [T] {
-    return []
+    var sortedCollection = collection
+    for i in stride(from: sortedCollection.count - 1, to: 0, by: -1) {
+        for j in 0..<i {
+            if comparator(sortedCollection[j + 1], sortedCollection[j]) {
+                swap(&sortedCollection, j, j + 1)
+            }
+        }
+    }
+    return sortedCollection
 }
 
 func quickSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bool) -> [T] {
