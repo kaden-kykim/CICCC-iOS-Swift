@@ -25,3 +25,7 @@ printSearchOutput(index: binarySearch(collections, target1), target: target1)
 printSearchOutput(index: binarySearch(collections, target2), target: target2)
 printSearchOutput(index: linearSearch(collections, target1), target: target1)
 printSearchOutput(index: linearSearch(collections, target2), target: target2)
+
+let unsortedArray = [4, 3, 8, 0, -2, 4, 7, 5]
+print("Insertion Sort(ASC): \(insertionSort(unsortedArray, <))")
+print("Insertion Sort(DESC): \(insertionSort(unsortedArray, >))")

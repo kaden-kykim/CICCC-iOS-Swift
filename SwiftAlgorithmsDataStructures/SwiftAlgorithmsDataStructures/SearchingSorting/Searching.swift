@@ -11,31 +11,34 @@ import Foundation
 // DocString: option + command + /
 
 /// Linear Search Algorithm
-/// returns the index of the given target value from the collection
+/// Returns the index of the given target value from the collection
 /// otherwise, nil
 /// Time Complexity: O(N)
 /// - Parameters:
-///   - collections: An array of any equatable
+///   - collection: An array of any equatable
 ///   - target: search target
-func linearSearch<T : Equatable>(_ collections: [T], _ target: T) -> Int? {
-    for (index, element) in collections.enumerated() where element == target {
+func linearSearch<T : Equatable>(_ collection: [T], _ target: T) -> Int? {
+    for (index, element) in collection.enumerated() where element == target {
         return index
     }
     return nil
 }
 
 
+/// IMPORTANT PRE-CONDITION: Elements must be sorted!
 /// Binary Search Algorithm
+/// Returns the index of the given target value from the collection
+/// otherwise, nil
 /// Time Complexity: O(lg N)
 /// - Parameters:
-///   - collections: An array of any comparable
+///   - collection: An array of any comparable
 ///   - target: search target
-func binarySearch<T : Comparable>(_ collections: [T], _ target: T) -> Int? {
-    var lower = 0, upper = collections.count
+func binarySearch<T : Comparable>(_ collection: [T], _ target: T) -> Int? {
+    var lower = 0, upper = collection.count
     
     while lower < upper {
         let mid = (lower + upper) / 2
-        let midVal = collections[mid]
+        let midVal = collection[mid]
         
         if midVal == target {
             return mid
