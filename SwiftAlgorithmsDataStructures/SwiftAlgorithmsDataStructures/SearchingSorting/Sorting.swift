@@ -49,19 +49,43 @@ func selectionSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bo
 func bubbleSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bool) -> [T] {
     var sortedCollection = collection
     for i in stride(from: sortedCollection.count - 1, to: 0, by: -1) {
+        var swapped = false
         for j in 0..<i {
             if comparator(sortedCollection[j + 1], sortedCollection[j]) {
                 swap(&sortedCollection, j, j + 1)
+                swapped = true
             }
+        }
+        if !swapped {
+            break
         }
     }
     return sortedCollection
 }
 
-func quickSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bool) -> [T] {
-    return []
+func mergeSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bool) -> [T] {
+    if collection.count <= 1 {
+        return collection
+    }
+    
+    let halfIndex = collection.count / 2
+    var lArr = mergeSort(Array(collection[..<halfIndex]), comparator)
+    var rArr = mergeSort(Array(collection[halfIndex...]), comparator)
+    
+    var sortedCollection = [T]()
+    while lArr.count != 0 && rArr.count != 0 {
+        sortedCollection.append(comparator(lArr[0], rArr[0]) ? lArr.remove(at: 0) : rArr.remove(at: 0))
+    }
+    if lArr.count != 0 {
+        sortedCollection.append(contentsOf: lArr)
+    }
+    if rArr.count != 0 {
+        sortedCollection.append(contentsOf: rArr)
+    }
+    
+    return sortedCollection
 }
 
-func mergeSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bool) -> [T] {
+func quickSort<T : Comparable>(_ collection: [T], _ comparator: (T, T) -> Bool) -> [T] {
     return []
 }
