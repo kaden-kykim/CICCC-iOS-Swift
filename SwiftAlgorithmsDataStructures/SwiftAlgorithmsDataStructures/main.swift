@@ -18,6 +18,10 @@ func printSearchOutput(index: Int?, target: Int) {
     }
 }
 
+func printTimeConsumption(_ name: String, start: DispatchTime, end: DispatchTime) {
+    print("\(name) Time Consumption: \(Double(end.uptimeNanoseconds - start.uptimeNanoseconds) / 1_000_000.0)ms")
+}
+
 let collection = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 let target1 = 10, target2 = 6
 
@@ -37,3 +41,31 @@ print("Merge Sort(ASC): \(mergeSort(unsortedArray, <))")
 print("Merge Sort(DESC): \(mergeSort(unsortedArray, >))")
 print("Quick Sort(ASC): \(quickSort(unsortedArray, <))")
 print("Quick Sort(DESC): \(quickSort(unsortedArray, >))")
+
+let lengthOfArray = 10_000
+let targetArray = (1...lengthOfArray).map { _ in Int.random(in: 1...(2 * lengthOfArray)) }
+
+var startTime = DispatchTime.now()
+var arr = insertionSort(targetArray, <)
+var endTime = DispatchTime.now()
+printTimeConsumption("Insertion Sort", start: startTime, end: endTime)
+
+startTime = DispatchTime.now()
+arr = selectionSort(targetArray, <)
+endTime = DispatchTime.now()
+printTimeConsumption("Selection Sort", start: startTime, end: endTime)
+
+startTime = DispatchTime.now()
+arr = bubbleSort(targetArray, <)
+endTime = DispatchTime.now()
+printTimeConsumption("Bubble Sort", start: startTime, end: endTime)
+
+startTime = DispatchTime.now()
+arr = mergeSort(targetArray, <)
+endTime = DispatchTime.now()
+printTimeConsumption("Merge Sort", start: startTime, end: endTime)
+
+startTime = DispatchTime.now()
+arr = quickSort(targetArray, <)
+endTime = DispatchTime.now()
+printTimeConsumption("Quick Sort", start: startTime, end: endTime)
