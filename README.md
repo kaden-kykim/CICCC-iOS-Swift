@@ -1,3 +1,3 @@
 # CICCC-iOS-Swift
 
-## iOS(Swift) exercise in WMAD class
+iOS(Swift) exercise in WMAD class
