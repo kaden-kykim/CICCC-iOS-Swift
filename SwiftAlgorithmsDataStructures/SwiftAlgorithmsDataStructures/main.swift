@@ -42,7 +42,7 @@ print("Merge Sort(DESC): \(mergeSort(unsortedArray, >))")
 print("Quick Sort(ASC): \(quickSort(unsortedArray, <))")
 print("Quick Sort(DESC): \(quickSort(unsortedArray, >))")
 
-let lengthOfArray = 10000
+let lengthOfArray = 10
 let targetArray = (1...lengthOfArray).map { _ in Int.random(in: 1...(2 * lengthOfArray)) }
 
 var startTime = DispatchTime.now()
@@ -69,3 +69,55 @@ startTime = DispatchTime.now()
 _ = quickSort(targetArray, <)
 endTime = DispatchTime.now()
 printTimeConsumption("Quick Sort", start: startTime, end: endTime)
+
+let numOfTestCase = 10
+// Check if a Bag works well
+print("================== Bag ==================")
+var bag = Bag<Int>()
+print("isEmpty: \(bag.isEmpty()), Count: \(bag.count)")
+for index in 1...numOfTestCase {
+    bag.add(item: index)
+    print("isEmpty: \(bag.isEmpty()), Count: \(bag.count)")
+    print("Item in Bag: \(bag)")
+}
+print("isEmpty: \(bag.isEmpty()), Count: \(bag.count)")
+
+// Check if a Stack works well
+print("================= Stack =================")
+var stack = Stack<Int>()
+print("isEmpty: \(stack.isEmpty()), Count: \(stack.count)")
+if let peek = stack.peek() { print("Peek: \(peek)") }
+for index in 1...numOfTestCase {
+    stack.push(item: index)
+    print("isEmpty: \(stack.isEmpty()), Count: \(stack.count)")
+    if let peek = stack.peek() { print("Peek: \(peek)") }
+    print("Item in Stack: \(stack)")
+}
+
+while !stack.isEmpty() {
+    if let poppedValue = stack.pop() {
+        print("Popped value: \(poppedValue)")
+    }
+}
+print("isEmpty: \(stack.isEmpty()), Count: \(stack.count)")
+
+// Check if a Queue works well
+print("================= Queue =================")
+var queue = Queue<Int>()
+print("isEmpty: \(queue.isEmpty()), Count: \(queue.count)")
+if let peek = queue.peek() { print("Peek: \(peek)")}
+
+for index in 1...numOfTestCase {
+    queue.enqueue(item: index)
+    print("isEmpty: \(queue.isEmpty()), Count: \(queue.count)")
+    if let peek = queue.peek() { print("Peek: \(peek)") }
+    print("Item in Queue: \(queue)")
+}
+
+while !queue.isEmpty() {
+    if let dequeuedValue = queue.dequeue() {
+        print("Dequeued value: \(dequeuedValue)")
+    }
+}
+print("isEmpty: \(queue.isEmpty()), Count: \(queue.count)")
+print("=========================================")
