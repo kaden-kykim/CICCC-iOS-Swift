@@ -80,7 +80,11 @@ for index in 1...numOfTestCase {
     print("isEmpty: \(bag.isEmpty()), Count: \(bag.count)")
     print("Item in Bag: \(bag)")
 }
-print("isEmpty: \(bag.isEmpty()), Count: \(bag.count)")
+
+print("Check forEach method")
+bag.forEach { item in
+    print(item)
+}
 
 // Check if a Stack works well
 print("================= Stack =================")
@@ -92,6 +96,10 @@ for index in 1...numOfTestCase {
     print("isEmpty: \(stack.isEmpty()), Count: \(stack.count)")
     if let peek = stack.peek() { print("Peek: \(peek)") }
     print("Item in Stack: \(stack)")
+}
+print("Check forEach method")
+stack.forEach { item in
+    print(item)
 }
 
 while !stack.isEmpty() {
@@ -112,6 +120,11 @@ for index in 1...numOfTestCase {
     print("isEmpty: \(queue.isEmpty()), Count: \(queue.count)")
     if let peek = queue.peek() { print("Peek: \(peek)") }
     print("Item in Queue: \(queue)")
+}
+
+print("Check forEach method")
+queue.forEach { item in
+    print(item)
 }
 
 while !queue.isEmpty() {
