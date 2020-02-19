@@ -16,11 +16,13 @@ import Foundation
 /// - Your total recursive calls should not exceed 120 times.
 
 var count = 0
+var numOfAllPossibility = 0
 func solveQueens(_ board: inout Board, row: Int = 0, findAllSolution: Bool = false) -> Bool {
     count += 1
     if row == board.size {
         if findAllSolution {
             print(board)
+            numOfAllPossibility += 1
         }
         return true
     } else {

@@ -10,6 +10,7 @@ import Foundation
 
 var boardForAll = Board(size: 8)
 _ = solveQueens(&boardForAll, findAllSolution: true)
+print("Number of all possibilities: \(numOfAllPossibility)\n")
 
 var board = Board(size: 8)
 count = 0
