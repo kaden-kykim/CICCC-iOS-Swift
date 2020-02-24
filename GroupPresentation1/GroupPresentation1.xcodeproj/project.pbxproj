@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6F5ABF0124032D910039DE14 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5ABF0024032D910039DE14 /* main.swift */; };
+		6F5ABF0A240335910039DE14 /* StringMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5ABF09240335910039DE14 /* StringMatching.swift */; };
+		6F5ABF0C24034ABA0039DE14 /* FindNElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5ABF0B24034ABA0039DE14 /* FindNElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		6F5ABEFD24032D910039DE14 /* GroupPresentation1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GroupPresentation1; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5ABF0024032D910039DE14 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6F5ABF09240335910039DE14 /* StringMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMatching.swift; sourceTree = "<group>"; };
+		6F5ABF0B24034ABA0039DE14 /* FindNElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindNElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,27 @@
 		6F5ABEFF24032D910039DE14 /* GroupPresentation1 */ = {
 			isa = PBXGroup;
 			children = (
+				6F5ABF0824032E1E0039DE14 /* StringMatching */,
+				6F5ABF0724032DF80039DE14 /* FindNElements */,
 				6F5ABF0024032D910039DE14 /* main.swift */,
 			);
 			path = GroupPresentation1;
+			sourceTree = "<group>";
+		};
+		6F5ABF0724032DF80039DE14 /* FindNElements */ = {
+			isa = PBXGroup;
+			children = (
+				6F5ABF0B24034ABA0039DE14 /* FindNElements.swift */,
+			);
+			path = FindNElements;
+			sourceTree = "<group>";
+		};
+		6F5ABF0824032E1E0039DE14 /* StringMatching */ = {
+			isa = PBXGroup;
+			children = (
+				6F5ABF09240335910039DE14 /* StringMatching.swift */,
+			);
+			path = StringMatching;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F5ABF0124032D910039DE14 /* main.swift in Sources */,
+				6F5ABF0A240335910039DE14 /* StringMatching.swift in Sources */,
+				6F5ABF0C24034ABA0039DE14 /* FindNElements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
