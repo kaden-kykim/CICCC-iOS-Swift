@@ -16,9 +16,8 @@ class LCATree {
     var nodes = [LCANode]()
     var queries = [String]()
     
-    init(_ input: String) {
-        var lines = input.split(separator: "\n")
-        numOfNodes = Int(lines.remove(at: 0))!
+    init() {
+        numOfNodes = Int(readLine()!)!
         
         for _ in 0...MAX_HEIGHT_LOG {
             parents.append(Array.init(repeating: -1, count: numOfNodes))
@@ -29,7 +28,7 @@ class LCATree {
         }
         
         for _ in 1..<numOfNodes {
-            let values = lines.remove(at: 0).split(separator: " ")
+            let values = readLine()!.split(separator: " ")
             let value1 = Int(values[0])! - 1, value2 = Int(values[1])! - 1
             nodes[value1].addAdjacent(nodes[value2])
             nodes[value2].addAdjacent(nodes[value1])
@@ -46,8 +45,8 @@ class LCATree {
             }
         }
         
-        for _ in 0..<Int(lines.remove(at: 0))! {
-            queries.append(String(lines.remove(at: 0)))
+        for _ in 0..<Int(readLine()!)! {
+            queries.append(readLine()!)
         }
     }
     
