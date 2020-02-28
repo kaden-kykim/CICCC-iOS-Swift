@@ -14,7 +14,7 @@ func testCaseScript(testCasePath: String, invokeFunction: () -> [Int]) {
     var testCases = [String]()
     try! testCases = fileManager.contentsOfDirectory(atPath: testCasePath)
     for content in testCases {
-        let dotIndex = content.firstIndex(of: ".")
+        let dotIndex = content.lastIndex(of: ".")
         if let dotIndex = dotIndex {
             if dotIndex == content.startIndex {
                 continue
