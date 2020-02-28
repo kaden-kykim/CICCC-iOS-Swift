@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F5D800A24090445009D9193 /* TestCaseScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D800924090445009D9193 /* TestCaseScript.swift */; };
 		6F9825CB23FF47D100E6DB60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9825CA23FF47D100E6DB60 /* main.swift */; };
 		6F9825D323FF485800E6DB60 /* LowestCommonAncestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9825D223FF485800E6DB60 /* LowestCommonAncestor.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6F5D800924090445009D9193 /* TestCaseScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestCaseScript.swift; path = ../TestCaseScript/TestCaseScript/TestCaseScript.swift; sourceTree = "<group>"; };
 		6F9825C723FF47D100E6DB60 /* LCA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LCA; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9825CA23FF47D100E6DB60 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6F9825D223FF485800E6DB60 /* LowestCommonAncestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowestCommonAncestor.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 		6F9825BE23FF47D100E6DB60 = {
 			isa = PBXGroup;
 			children = (
+				6F5D800924090445009D9193 /* TestCaseScript.swift */,
 				6F9825C923FF47D100E6DB60 /* LCA */,
 				6F9825C823FF47D100E6DB60 /* Products */,
 			);
@@ -131,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5D800A24090445009D9193 /* TestCaseScript.swift in Sources */,
 				6F9825CB23FF47D100E6DB60 /* main.swift in Sources */,
 				6F9825D323FF485800E6DB60 /* LowestCommonAncestor.swift in Sources */,
 			);
