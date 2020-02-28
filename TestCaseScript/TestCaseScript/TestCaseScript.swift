@@ -9,10 +9,12 @@
 import Foundation
 
 func testCaseScript(testCasePath: String, invokeFunction: () -> [Int]) {
+    let url = URL(fileURLWithPath: testCasePath)
+    let path = url.appendingPathComponent("").path
     let inExt = ".in", outExt = ".out"
     let fileManager = FileManager()
     var testCases = [String]()
-    try! testCases = fileManager.contentsOfDirectory(atPath: testCasePath)
+    try! testCases = fileManager.contentsOfDirectory(atPath: path)
     for content in testCases {
         let dotIndex = content.lastIndex(of: ".")
         if let dotIndex = dotIndex {
@@ -21,16 +23,16 @@ func testCaseScript(testCasePath: String, invokeFunction: () -> [Int]) {
             }
             let fileName = content.prefix(upTo: dotIndex)
             let ext = content.suffix(from: dotIndex)
-            if !fileManager.fileExists(atPath: "\(testCasePath)\(fileName)\(outExt)") {
+            if !fileManager.fileExists(atPath: "\(path)\(fileName)\(outExt)") {
                 print("There is no output file")
                 continue
             }
             if ext == inExt {
-                freopen("\(testCasePath)\(fileName)\(ext)", "r", stdin)
+                freopen("\(path)\(fileName)\(ext)", "r", stdin)
                 let start = DispatchTime.now()
                 let lcaResults = invokeFunction()
                 let end = DispatchTime.now()
-                freopen("\(testCasePath)\(fileName)\(outExt)", "r", stdin)
+                freopen("\(path)\(fileName)\(outExt)", "r", stdin)
                 var gt = [Int]()
                 while let line = readLine() {
                     gt.append(Int(line)!)
