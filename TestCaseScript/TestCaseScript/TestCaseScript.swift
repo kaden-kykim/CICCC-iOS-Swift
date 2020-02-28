@@ -15,6 +15,7 @@ func testCaseScript(testCasePath: String, invokeFunction: () -> [Int]) {
     let fileManager = FileManager()
     var testCases = [String]()
     try! testCases = fileManager.contentsOfDirectory(atPath: path)
+    testCases.sort()
     for content in testCases {
         let dotIndex = content.lastIndex(of: ".")
         if let dotIndex = dotIndex {
