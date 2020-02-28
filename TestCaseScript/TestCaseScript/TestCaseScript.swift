@@ -35,8 +35,8 @@ func testCaseScript(testCasePath: String, invokeFunction: () -> [Int]) {
                 while let line = readLine() {
                     gt.append(Int(line)!)
                 }
-                print("LCA Case \(fileName): \((gt == lcaResults) ? "Correct" : "Incorrect"), " +
-                    "Time: \(Double(end.uptimeNanoseconds - start.uptimeNanoseconds) / 1_000_000)ms")
+                print("Case \(fileName): \((gt == lcaResults) ? "Pass" : "Fail") " +
+                    "(Time: \(Double(end.uptimeNanoseconds - start.uptimeNanoseconds) / 1_000_000)ms)")
             }
         }
     }
