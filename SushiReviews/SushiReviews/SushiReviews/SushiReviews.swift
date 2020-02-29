@@ -28,7 +28,9 @@ func sushiReviews() -> Int {
     let (startNode, _) = getMaxDistanceWithIndex(from: 0, checkRealSushi: checkRealSushi, adjacents: adjacents)
     let (_, maxDist) = getMaxDistanceWithIndex(from: startNode, checkRealSushi: checkRealSushi, adjacents: adjacents)
 
-    return dfsForRealSushi(rootNode: startNode, checkRealSushi, adjacents) - maxDist
+    let result = dfsForRealSushi(rootNode: startNode, checkRealSushi, adjacents) - maxDist
+    print(result)
+    return result
 }
 
 fileprivate func dfsForRealSushi(rootNode: Int, _ checkRealSushi: [Bool], _ adjacents: [[Int]]) -> Int {
