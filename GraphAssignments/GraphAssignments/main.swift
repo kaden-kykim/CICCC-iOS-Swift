@@ -8,5 +8,6 @@
 
 import Foundation
 
-_ = repeatingSequence()
 _ = cyclePermutation()
+_ = repeatingSequence()
+
