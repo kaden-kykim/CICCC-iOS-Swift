@@ -31,14 +31,14 @@ func testCaseScript(testCasePath: String, invokeFunction: () -> [Int]) {
             if ext == inExt {
                 freopen("\(path)\(fileName)\(ext)", "r", stdin)
                 let start = DispatchTime.now()
-                let lcaResults = invokeFunction()
+                let results = invokeFunction()
                 let end = DispatchTime.now()
                 freopen("\(path)\(fileName)\(outExt)", "r", stdin)
                 var gt = [Int]()
                 while let line = readLine() {
                     gt.append(Int(line)!)
                 }
-                print("Case \(fileName): \((gt == lcaResults) ? "Pass" : "Fail") " +
+                print("Case \(fileName): \((gt == results) ? "Pass" : "Fail") " +
                     "(Time: \(Double(end.uptimeNanoseconds - start.uptimeNanoseconds) / 1_000_000)ms)")
             }
         }
