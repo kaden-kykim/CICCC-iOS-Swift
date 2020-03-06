@@ -25,3 +25,9 @@ print(leastInterval(["A","A","A","B","B","B"], 2))
 //print(leastInterval(["A","A","A","B","B","B"], 50))
 // 16
 //print(leastInterval(["A","A","A","A","A","A","B","C","D","E","F","G"], 2))
+
+// ## 03. Gas Station
+// 3
+print(canCompleteCircuit([1,2,3,4,5], [3,4,5,1,2]))
+// -1
+//print(canCompleteCircuit([2,3,4], [3,4,3]))
