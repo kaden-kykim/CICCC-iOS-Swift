@@ -31,3 +31,9 @@ print(leastInterval(["A","A","A","B","B","B"], 2))
 print(canCompleteCircuit([1,2,3,4,5], [3,4,5,1,2]))
 // -1
 //print(canCompleteCircuit([2,3,4], [3,4,3]))
+
+// ## 04. Partition Labels
+// [9, 7, 8]
+print(partitionLabels("ababcbacadefegdehijhklij"))
+// [1, 9]
+//print(partitionLabels("caedbdedda"))
