@@ -16,3 +16,12 @@ print(twoCitySchedCost([[10,20],[30,200],[400,50],[30,20]]))
 // 4723
 //print(twoCitySchedCost([[70,311],[74,927],[732,711],[126,583],[857,118],[97,928],[975,843],[175,221],[284,929],[816,602],[689,863],[721,888]]))
 
+// ## 02. Task Scheduler
+// 8
+print(leastInterval(["A","A","A","B","B","B"], 2))
+// 4
+//print(leastInterval(["A","B","A"], 2))
+// 104
+//print(leastInterval(["A","A","A","B","B","B"], 50))
+// 16
+//print(leastInterval(["A","A","A","A","A","A","B","C","D","E","F","G"], 2))
