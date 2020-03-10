@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F5F3605241843610013C0A5 /* BellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5F3604241843610013C0A5 /* BellmanFord.swift */; };
+		6F5F36072418455D0013C0A5 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5F36062418455D0013C0A5 /* Queue.swift */; };
 		6FBEAEC22416F3D9000FC8FB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEAEC12416F3D9000FC8FB /* main.swift */; };
 		6FBEAECA2416F3F0000FC8FB /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEAEC92416F3F0000FC8FB /* Dijkstra.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6F5F3604241843610013C0A5 /* BellmanFord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellmanFord.swift; sourceTree = "<group>"; };
+		6F5F36062418455D0013C0A5 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = ../SwiftAlgorithmsDataStructures/SwiftAlgorithmsDataStructures/DataStructures/Queue.swift; sourceTree = "<group>"; };
 		6FBEAEBE2416F3D9000FC8FB /* ShortestPath */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShortestPath; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBEAEC12416F3D9000FC8FB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6FBEAEC92416F3F0000FC8FB /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
@@ -40,9 +44,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F5F36032418433C0013C0A5 /* BellmanFord */ = {
+			isa = PBXGroup;
+			children = (
+				6F5F3604241843610013C0A5 /* BellmanFord.swift */,
+			);
+			path = BellmanFord;
+			sourceTree = "<group>";
+		};
 		6FBEAEB52416F3D9000FC8FB = {
 			isa = PBXGroup;
 			children = (
+				6F5F36062418455D0013C0A5 /* Queue.swift */,
 				6FBEAEC02416F3D9000FC8FB /* ShortestPath */,
 				6FBEAEBF2416F3D9000FC8FB /* Products */,
 			);
@@ -59,6 +72,7 @@
 		6FBEAEC02416F3D9000FC8FB /* ShortestPath */ = {
 			isa = PBXGroup;
 			children = (
+				6F5F36032418433C0013C0A5 /* BellmanFord */,
 				6FBEAEC82416F3DF000FC8FB /* Dijkstra */,
 				6FBEAEC12416F3D9000FC8FB /* main.swift */,
 			);
@@ -131,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5F36072418455D0013C0A5 /* Queue.swift in Sources */,
 				6FBEAEC22416F3D9000FC8FB /* main.swift in Sources */,
 				6FBEAECA2416F3F0000FC8FB /* Dijkstra.swift in Sources */,
+				6F5F3605241843610013C0A5 /* BellmanFord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
