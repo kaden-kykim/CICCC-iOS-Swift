@@ -10,6 +10,7 @@
 		6F1717012411CC920011038B /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1717002411CC920011038B /* TaskScheduler.swift */; };
 		6F171704241222220011038B /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F171703241222220011038B /* GasStation.swift */; };
 		6F17170724122CD50011038B /* PartitionLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F17170624122CD50011038B /* PartitionLabels.swift */; };
+		6F17170A2412F3270011038B /* CourseSchedule3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1717092412F3270011038B /* CourseSchedule3.swift */; };
 		6F5EEAE42410D6BB002C45B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5EEAE32410D6BB002C45B3 /* main.swift */; };
 		6F5EEAEC2410D6D6002C45B3 /* TwoCityScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5EEAEB2410D6D6002C45B3 /* TwoCityScheduling.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		6F1717002411CC920011038B /* TaskScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
 		6F171703241222220011038B /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
 		6F17170624122CD50011038B /* PartitionLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionLabels.swift; sourceTree = "<group>"; };
+		6F1717092412F3270011038B /* CourseSchedule3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSchedule3.swift; sourceTree = "<group>"; };
 		6F5EEAE02410D6BB002C45B3 /* GreedyAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GreedyAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5EEAE32410D6BB002C45B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6F5EEAEB2410D6D6002C45B3 /* TwoCityScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoCityScheduling.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 			path = PartitionLabels;
 			sourceTree = "<group>";
 		};
+		6F1717082412F30C0011038B /* CourseSchedule3 */ = {
+			isa = PBXGroup;
+			children = (
+				6F1717092412F3270011038B /* CourseSchedule3.swift */,
+			);
+			path = CourseSchedule3;
+			sourceTree = "<group>";
+		};
 		6F5EEAD72410D6BB002C45B3 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 		6F5EEAE22410D6BB002C45B3 /* GreedyAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				6F1717082412F30C0011038B /* CourseSchedule3 */,
 				6F17170524122CC40011038B /* PartitionLabels */,
 				6F171702241222060011038B /* GasStation */,
 				6F1716FF2411CC810011038B /* TaskScheduler */,
@@ -169,6 +180,7 @@
 				6F1717012411CC920011038B /* TaskScheduler.swift in Sources */,
 				6F5EEAEC2410D6D6002C45B3 /* TwoCityScheduling.swift in Sources */,
 				6F17170724122CD50011038B /* PartitionLabels.swift in Sources */,
+				6F17170A2412F3270011038B /* CourseSchedule3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
