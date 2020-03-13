@@ -8,8 +8,13 @@
 
 import Foundation
 
-
-
-// 6. Non-decreasing Digits
+// 7. Non-decreasing Digits
+// 220
 print(nonDecreasingDigits(3))
+
+// 8. LIS
+// 4
+print(lengthOfLIS([10,9,2,5,3,7,101,18]))
+// 5
+//print(lengthOfLIS([2,15,3,7,8,6,18]))
 
