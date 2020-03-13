@@ -20,7 +20,8 @@ print(lengthOfLIS([10,9,2,5,3,7,101,18]))
 
 // 10. Sum of Square numbers - 2
 // 4
-print(sumOfSquareNumbers2(7))
+//print(sumOfSquareNumbers2(7))
+print(sumOfSquareNumbers2(1))
 // 2
 //print(sumOfSquareNumbers2(18))
 // 2

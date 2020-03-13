@@ -10,7 +10,7 @@ import Foundation
 
 func sumOfSquareNumbers2(_ N: Int) -> Int {
     var sqNums = [Int]()
-    for sqrt in 1..<N {
+    for sqrt in 1...N {
         let sqNum = sqrt * sqrt
         if sqNum < N {
             sqNums.append(sqNum)
