@@ -33,8 +33,14 @@ print(get2xNTiles2(2))
 //print(get2xNTiles2(8))
 
 // 5. One Two Three
-//[7, 44, 274]
+// [7, 44, 274]
 print(oneTwoThree(3, [4,7,10]))
+
+// 6. Pretty Number
+// 116
+print(prettyNumber(5))
+// 2986
+//print(prettyNumber(10))
 
 // 7. Non-decreasing Digits
 // 220
