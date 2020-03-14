@@ -52,6 +52,16 @@ print(lengthOfLIS([10,9,2,5,3,7,101,18]))
 // 5
 //print(lengthOfLIS([2,15,3,7,8,6,18]))
 
+// 9. Sum of Square numbers
+// true
+print(judgeSquareSum(5))
+// true
+//print(judgeSquareSum(4))
+// true
+//print(judgeSquareSum(1))
+// false
+//print(judgeSquareSum(2147482647))
+
 // 10. Sum of Square numbers - 2
 // 4
 print(sumOfSquaredNumbers2(7))
