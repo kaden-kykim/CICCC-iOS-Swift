@@ -27,3 +27,11 @@ print(sumOfSquaredNumbers2(7))
 //print(sumOfSquaredNumbers2(18))
 // 2
 //print(sumOfSquaredNumbers2(2624))
+
+// 11. Pokemon
+// 31
+print(maxCandies(3, 4, [[1,2,3,4],[0,0,0,5],[9,8,7,6]]))
+// 3
+//print(maxCandies(3, 3, [[1,0,0],[0,1,0],[0,0,1]]))
+// 47
+//print(maxCandies(4, 3, [[1,2,3],[6,5,4],[7,8,9],[12,11,10]]))
