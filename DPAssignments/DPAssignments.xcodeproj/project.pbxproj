@@ -13,6 +13,7 @@
 		6F8A19B1241C2B780027EE92 /* SumOfSquareNumbers2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A19B0241C2B780027EE92 /* SumOfSquareNumbers2.swift */; };
 		6FBEC08A241CA21F007558B6 /* ClimbingStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEC089241CA21F007558B6 /* ClimbingStairs.swift */; };
 		6FBEC08D241CA2FD007558B6 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEC08C241CA2FD007558B6 /* Pokemon.swift */; };
+		6FBEC090241CACC7007558B6 /* makeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEC08F241CACC7007558B6 /* makeOne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		6F8A19B0241C2B780027EE92 /* SumOfSquareNumbers2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfSquareNumbers2.swift; sourceTree = "<group>"; };
 		6FBEC089241CA21F007558B6 /* ClimbingStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairs.swift; sourceTree = "<group>"; };
 		6FBEC08C241CA2FD007558B6 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		6FBEC08F241CACC7007558B6 /* makeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		6F8A19A0241AD7920027EE92 /* DPAssignments */ = {
 			isa = PBXGroup;
 			children = (
+				6FBEC08E241CACBD007558B6 /* MakeOne */,
 				6FBEC08B241CA2F4007558B6 /* Pokemon */,
 				6FBEC088241CA20A007558B6 /* ClimbingStairs */,
 				6F8A19AF241C2B550027EE92 /* SumOfSquareNumbers */,
@@ -115,6 +118,14 @@
 				6FBEC08C241CA2FD007558B6 /* Pokemon.swift */,
 			);
 			path = Pokemon;
+			sourceTree = "<group>";
+		};
+		6FBEC08E241CACBD007558B6 /* MakeOne */ = {
+			isa = PBXGroup;
+			children = (
+				6FBEC08F241CACC7007558B6 /* makeOne.swift */,
+			);
+			path = MakeOne;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 				6F8A19AE241AE8570027EE92 /* LongestIncreasingSubsequence.swift in Sources */,
 				6F8A19A2241AD7920027EE92 /* main.swift in Sources */,
 				6FBEC08D241CA2FD007558B6 /* Pokemon.swift in Sources */,
+				6FBEC090241CACC7007558B6 /* makeOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

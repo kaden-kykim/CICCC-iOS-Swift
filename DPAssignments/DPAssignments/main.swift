@@ -7,11 +7,18 @@
 //
 
 import Foundation
+
 // 1. Climbing Stairs
 // 2
 print(climbStairs(2))
 // 3
 //print(climbStairs(3))
+
+// 2. Make One
+// 1
+print(makeOne(2))
+// 3
+//print(makeOne(10))
 
 // 7. Non-decreasing Digits
 // 220
