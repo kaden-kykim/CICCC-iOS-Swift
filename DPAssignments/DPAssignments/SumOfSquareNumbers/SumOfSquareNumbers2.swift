@@ -8,7 +8,7 @@
 
 import Foundation
 
-func sumOfSquareNumbers2(_ N: Int) -> Int {
+func sumOfSquaredNumbers2(_ N: Int) -> Int {
     var sqNums = [Int]()
     for sqrt in 1...N {
         let sqNum = sqrt * sqrt
@@ -41,4 +41,19 @@ func sumOfSquareNumbers2(_ N: Int) -> Int {
         stage += 1
         subtracts = curSub
     }
+}
+
+func sumOfSquaredNumber(_ n: Int) -> Int {
+    var dp = [Int](repeating: 0, count: n + 1)
+    for i in 1...n {
+        dp[i] = i
+        var j = 1
+        while j * j <= i {
+            if dp[i] > dp[i - j * j] + 1 {
+                dp[i] = dp[i - j * j] + 1
+            }
+            j += 1
+        }
+    }
+    return dp[n]
 }
