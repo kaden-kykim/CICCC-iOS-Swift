@@ -32,6 +32,10 @@ print(get2xNTiles2(2))
 // 171
 //print(get2xNTiles2(8))
 
+// 5. One Two Three
+//[7, 44, 274]
+print(oneTwoThree(3, [4,7,10]))
+
 // 7. Non-decreasing Digits
 // 220
 print(nonDecreasingDigits(3))
