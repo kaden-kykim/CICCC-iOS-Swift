@@ -20,6 +20,18 @@ print(makeOne(2))
 // 3
 //print(makeOne(10))
 
+// 3. 2 x N Tiles
+// 2
+print(get2xNTiles(2))
+// 55
+//print(get2xNTiles(9))
+
+// 4. 2 x N Tiles - 2
+// 3
+print(get2xNTiles2(2))
+// 171
+//print(get2xNTiles2(8))
+
 // 7. Non-decreasing Digits
 // 220
 print(nonDecreasingDigits(3))
