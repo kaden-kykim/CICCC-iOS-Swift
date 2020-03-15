@@ -98,9 +98,14 @@ print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
 // 3
 //print(maxSubArray([1,2]))
 
-
 // 14. Text Justification
 // ["This    is    an","example  of text","justification.  "]
 print(fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16))
 // ["What   must   be", "acknowledgment  ", "shall be        "]
-print(fullJustify(["What","must","be","acknowledgment","shall","be"], 16))
+//print(fullJustify(["What","must","be","acknowledgment","shall","be"], 16))
+
+// 15. Edit Distance
+// 3
+print(minDistance("horse", "ros"))
+// 5
+//print(minDistance("intention", "execution"))
