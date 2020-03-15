@@ -79,3 +79,13 @@ print(maxCandies(3, 4, [[1,2,3,4],[0,0,0,5],[9,8,7,6]]))
 //print(maxCandies(3, 3, [[1,0,0],[0,1,0],[0,0,1]]))
 // 47
 //print(maxCandies(4, 3, [[1,2,3],[6,5,4],[7,8,9],[12,11,10]]))
+
+// 12. Decode Ways
+// 2
+print(numDecodings("12"))
+// 3
+//print(numDecodings("226"))
+// 5
+//print(numDecodings("1212"))
+// 3
+//print(numDecodings("12120"))
