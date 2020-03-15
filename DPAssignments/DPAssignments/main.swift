@@ -89,3 +89,17 @@ print(numDecodings("12"))
 //print(numDecodings("1212"))
 // 3
 //print(numDecodings("12120"))
+
+// 13. Maximum Subarray
+// 6
+print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+// -1
+print(maxSubArray([-2,-1]))
+// 3
+print(maxSubArray([1,2]))
+// -1
+print(maxSubArray([-2,-3,-1]))
+// 5
+print(maxSubArray([3,2,-3,-1,1,-3,1,-1]))
+// 2
+print(maxSubArray([0,-3,1,1]))

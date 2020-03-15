@@ -12,6 +12,7 @@
 		6F506D7E241CBDDB00B8ED67 /* PrettyNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F506D7D241CBDDB00B8ED67 /* PrettyNumber.swift */; };
 		6F506D80241CC03E00B8ED67 /* SumOfSquareNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F506D7F241CC03E00B8ED67 /* SumOfSquareNumbers.swift */; };
 		6F506D83241DD6EC00B8ED67 /* DecodeWays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F506D82241DD6EC00B8ED67 /* DecodeWays.swift */; };
+		6F506D86241DE6EA00B8ED67 /* MaximumSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F506D85241DE6EA00B8ED67 /* MaximumSubarray.swift */; };
 		6F8A19A2241AD7920027EE92 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A19A1241AD7920027EE92 /* main.swift */; };
 		6F8A19AB241AD7C40027EE92 /* NonDecreasingDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A19AA241AD7C40027EE92 /* NonDecreasingDigits.swift */; };
 		6F8A19AE241AE8570027EE92 /* LongestIncreasingSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A19AD241AE8570027EE92 /* LongestIncreasingSubsequence.swift */; };
@@ -40,6 +41,7 @@
 		6F506D7D241CBDDB00B8ED67 /* PrettyNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyNumber.swift; sourceTree = "<group>"; };
 		6F506D7F241CC03E00B8ED67 /* SumOfSquareNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfSquareNumbers.swift; sourceTree = "<group>"; };
 		6F506D82241DD6EC00B8ED67 /* DecodeWays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeWays.swift; sourceTree = "<group>"; };
+		6F506D85241DE6EA00B8ED67 /* MaximumSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumSubarray.swift; sourceTree = "<group>"; };
 		6F8A199E241AD7920027EE92 /* DPAssignments */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DPAssignments; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8A19A1241AD7920027EE92 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6F8A19AA241AD7C40027EE92 /* NonDecreasingDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonDecreasingDigits.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 			path = DecodeWays;
 			sourceTree = "<group>";
 		};
+		6F506D84241DE6D400B8ED67 /* MaximumSubarray */ = {
+			isa = PBXGroup;
+			children = (
+				6F506D85241DE6EA00B8ED67 /* MaximumSubarray.swift */,
+			);
+			path = MaximumSubarray;
+			sourceTree = "<group>";
+		};
 		6F8A1995241AD7920027EE92 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 		6F8A19A0241AD7920027EE92 /* DPAssignments */ = {
 			isa = PBXGroup;
 			children = (
+				6F506D84241DE6D400B8ED67 /* MaximumSubarray */,
 				6F506D81241DD6E000B8ED67 /* DecodeWays */,
 				6F506D7C241CBDCE00B8ED67 /* PrettyNumber */,
 				6F506D79241CB7B700B8ED67 /* OneTwoThree */,
@@ -243,6 +254,7 @@
 				6F506D7B241CB7D200B8ED67 /* OneTwoThree.swift in Sources */,
 				6FBEC08A241CA21F007558B6 /* ClimbingStairs.swift in Sources */,
 				6F506D80241CC03E00B8ED67 /* SumOfSquareNumbers.swift in Sources */,
+				6F506D86241DE6EA00B8ED67 /* MaximumSubarray.swift in Sources */,
 				6F506D7E241CBDDB00B8ED67 /* PrettyNumber.swift in Sources */,
 				6F8A19AE241AE8570027EE92 /* LongestIncreasingSubsequence.swift in Sources */,
 				6F506D83241DD6EC00B8ED67 /* DecodeWays.swift in Sources */,
