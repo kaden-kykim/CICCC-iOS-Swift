@@ -97,3 +97,10 @@ print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
 //print(maxSubArray([-2,-1]))
 // 3
 //print(maxSubArray([1,2]))
+
+
+// 14. Text Justification
+// ["This    is    an","example  of text","justification.  "]
+print(fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16))
+// ["What   must   be", "acknowledgment  ", "shall be        "]
+print(fullJustify(["What","must","be","acknowledgment","shall","be"], 16))
